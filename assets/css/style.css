@@ -6,7 +6,7 @@
 }
 
 
-.flex_container{
+.flex_container {
     max-width: 70%;
     margin: auto;
 }
@@ -22,20 +22,21 @@
 :root {
     --main-purple: #5865f2;
     --light-black: #23272a;
-    --pure-white: #ffffff;
-    --font-discord: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    --pure-white: #fff;
+    --font-discord: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* /region navbar */
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     margin: 2rem;
+    align-items: center;
 }
 
-.nav_link{
+.nav_link {
     text-decoration: none;
     color: var(--main-purple);
     margin: 0 2rem;
@@ -45,24 +46,90 @@
 
 /* /region title */
 
-.main_title{
+.main_title {
     text-align: center;
-    max-width: 40%;
+    max-width: 50%;
     margin: auto;
-    
 }
 
-.sub_h1{
-    margin: 1rem;
+.title {
+    font-weight: 900;
+    font-size: 45px;
+    margin-top: 5rem;
+}
+
+.sub_title {
+    margin: 2rem 0;
+    font-size: 25px;
 }
 
 /* /endregion title */
 
+/* /region main */
+
+.main_body {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.main_body2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.main_text {
+    max-width: 30%;
+}
+
+.text {
+    font-size: 45px;
+    line-height: 1.3;
+    font-weight: 800;
+    margin: 2rem 0;
+}
+
+.sub_text {
+    line-height: 1.3;
+    margin: 2rem 0;
+    font-size: 25px;
+}
+
+.main_footer {
+    text-align: center;
+}
+
+/* /endregion main */
+
 /* /region buttons */
 
-.btnshape{
+.btn_shape_1 {
+    border-radius: 28px;
+    padding: 16px 16px;
+    border: none;
+    font-size: 15px;
+}
+
+.btn_shape_2 {
     border-radius: 28px;
     padding: 8px 16px;
+    border: none;
+}
+
+.light_btn {
+    color: var(--light-black);
+    background-color: var(--pure-white);
+}
+
+.dark_btn {
+    color: var(--pure-white);
+    background-color: var(--light-black);
+}
+
+.violet_btn {
+    color: var(--pure-white);
+    background-color: var(--main-purple);
 }
 
 /* /endregion buttons */
